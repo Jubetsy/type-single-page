@@ -1,16 +1,24 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
-        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+    src: url('/fonts/MonaspaceKryptonVarVF[wght\,wdth\,slnt].woff') format("woff"),
+        url('/fonts/MonaspaceArgonVarVF[wght\,wdth\,slnt].woff2') format("woff2"),
+        url('/fonts/MonaspaceNeonVarVF[wght\,wdth\,slnt].woff2') format("woff2"),
+        url('/fonts/MonaspaceRadonVarVF[wght\,wdth\,slnt].woff2') format("woff2"),
+        url('/fonts/MonaspaceXenonVarVF[wght\,wdth\,slnt].woff2') format("woff2"),
+        url('/fonts/MonaspaceKryptonVarVF[wght\,wdth\,slnt].ttf') format('truetype'),
+        url('./fonts/MonaspaceArgonVarVF[wght\,wdth\,slnt].ttf') format('truetype'),
+        url('./fonts/MonaspaceNeonVarVF[wght\,wdth\,slnt].ttf') format('truetype'),
+        url('./fonts/MonaspaceRadonVarVF[wght\,wdth\,slnt].ttf') format('truetype'),
+        url('./fonts/MonaspaceXenonVarVF[wght\,wdth\,slnt].ttf') format('truetype');
+        
 
-    font-family: 'Forma';
+    font-family: 'Monaspace';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: lightsteelblue;
-    font-family: 'Forma';
+    font-family: 'Monaspace';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -57,9 +65,9 @@ h3{
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "wght" 200, "wdth" 100, "slnt" -11;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{ font-variation-settings: "wght" 800, "wdth" 200, "slnt" 0;
     }
     
 }
@@ -89,3 +97,24 @@ h3{
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
+
+.container{
+    display: inline-block;
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+    typing 1s steps(20, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
